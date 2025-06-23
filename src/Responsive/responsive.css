@@ -116,6 +116,12 @@
     .blog .col-lg-6:last-child{
         padding-left:15px !important;
     }
+    .blog .col-lg-6:nth-child(2)::before{
+        display: none;
+    }
+    .blog .col-lg-6:nth-child(2)::after{
+        display: none;
+    }
     .blog .col-lg-6 .flex{
         display: block !important;
     }

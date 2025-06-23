@@ -71,7 +71,7 @@ export const BottomHeader = () => {
               {['homeSection', 'aboutSection', 'serviceSection', 'portfolioSection', 'shopSection', 'blogSection'].map((id) => (
                 <CNavItem key={id}>
                   <Link to={`#${id}`} onClick={(e) => sectionToScroll(e, id)} className="px-3 py-2">
-                    {id.replace('Section', '').replace(/^\w/, c => c.toUpperCase())}
+                    {id.replace('Section', '').replace( c => c.toUpperCase())}
                   </Link>
                 </CNavItem>
               ))}
@@ -100,7 +100,7 @@ export const BottomHeader = () => {
               {['homeSection', 'aboutSection', 'serviceSection', 'portfolioSection', 'shopSection', 'blogSection'].map((id) => (
                 <CNavItem key={id}>
                   <Link to={`#${id}`} onClick={(e) => sectionToScroll(e, id)} className="block">
-                    {id.replace('Section', '').replace(/^\w/, c => c.toUpperCase())}
+                    {id.replace('Section', '').replace(c => c.toUpperCase())}
                   </Link>
                 </CNavItem>
               ))}
