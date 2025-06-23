@@ -1,0 +1,32 @@
+.top_header{
+    ul{
+        li{
+            margin-right: 20px;
+            color: #fff;
+            position: relative;
+            &::before{
+            position: absolute;
+            content: "";
+            top: 3px;
+            left: -10px;
+            width: 1px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            }
+            &:first-child::before{
+               display: none;
+            }
+            a{
+                color: #fff;
+                font-size: 15px;
+                font-weight: 600;
+                i{
+                    margin-right: 5px;
+                }
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}

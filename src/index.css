@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* global custom css */
+:root{
+  --bg-color: #b6554f;
+  --bg-light: #3e0906;
+  --para:#5a564d;
+  --banner-bg:#E2D3C4;
+  --light-pink:#fff8ec;
+  --link-color:#696969;
+  /* google fonts */
+  --gotu-family:"Gotu", sans-serif;
+  --kanit-family:"Kanit", sans-serif;  
+}
+.carousel-control-next, .carousel-control-prev{
+  display: none !important;
+}

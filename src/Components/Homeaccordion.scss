@@ -1,0 +1,32 @@
+.collapse {
+    visibility: inherit;
+}
+/* Style for ALL accordion headers */
+/* Apply to all headers */
+.accordion-button {
+  background-color: #f5f5f5; // default
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Apply to the ACTIVE (expanded) header */
+.accordion-button:not(.collapsed) {
+  background-color: #b6554f !important; // ✅ ACTIVE background
+  color: #fff !important;
+  &:after{
+    filter: invert(1) !important;
+  }
+}
+
+/* Optional hover effect */
+.accordion-button:hover {
+  background-color: #a94d47 !important;
+  color: #fff !important;
+}
+.accordion-body{
+  color: var(--para);
+  font-weight: 500;
+  line-height: 28px;
+}
+
+

@@ -1,0 +1,111 @@
+.about{
+    margin: 60px 0;
+    h4{
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: var(--gotu-family);
+        color: var(--bg-color)
+    }
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--bg-light);
+    }
+    p{
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+        color: var(--para);
+        margin-top: 20px;
+    }
+    h6{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--bg-light);
+        font-family: var(--gotu-family);
+    }
+    h5{
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--para);
+    }
+    .aboutInfo{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            top:0;
+            left: 46%;
+            height: 51px;
+            width: 2px;
+            background-color: var(--bg-color);
+        }
+    }
+    .aboutImg{
+        padding-left: 45px;
+        position: relative;
+        z-index: 1;
+        .abouttext{
+            position: absolute;
+            top: 50%;
+            left: 56%;
+            z-index: 2;
+            text-align: center;
+            background-color: var(--bg-color);
+           width: 180px;
+           height: 180px;
+           border-radius: 50%;
+           border: 10px solid #fff;
+           padding: 18px;
+           transform: translate(-50%, -50%);
+           h3{
+            font-size: 60px;
+            color: #fff;
+            font-family: var(--gotu-family);
+            font-weight: 600;
+            padding: 0;
+            margin: 0;
+           }
+           p{
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #fff;
+            line-height: 20px;
+            font-family: var(--gotu-family);
+            margin: 0;
+            padding: 0;
+           }
+        }
+        .img-about-2{
+            animation: radius-two 4s infinite ease-in-out;
+            @keyframes radius-two {
+                 0%{
+                    border-radius: 0 100px 0 100px;
+                 }
+                 50%{
+                    border-radius: 40px 40px 40px 40px;
+                 }
+                 100%{
+                    border-radius: 0 100px 0 100px;
+                 }
+            }
+        }
+        .img-about-1{
+            animation: radius-one 4s infinite ease-in-out;
+            @keyframes radius-one {
+                 0%{
+                    border-radius: 100px 0 100px 0;
+                 }
+                 50%{
+                    border-radius: 40px 40px 40px 40px;
+                 }
+                 100%{
+                    border-radius: 100px 0 100px 0;
+                 }
+            }
+        }
+    }
+}

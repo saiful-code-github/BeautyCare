@@ -1,0 +1,77 @@
+.work_process{
+    position: relative;
+     h4{
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: var(--gotu-family);
+        color: var(--bg-color)
+    }
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--bg-light);
+    }
+   .line-img{
+      position: absolute;
+      top: 40%;
+      left: 29%;
+      opacity: 0.3;
+    .line_img_two{
+       position: absolute;
+       top: 67%;
+      left: 178%;
+      transform: rotateX(180deg);
+    }
+   }
+    .process_box{
+        position: relative;
+        svg{
+            fill: var(--bg-color);
+            width: 60px;
+            height: 60px;
+        }
+        div{
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            padding: 32px;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fff;
+            position: relative;
+            h6{
+                position: absolute;
+                top: -10px;
+                right: -5px;
+                width: 45px;
+                height: 45px;
+                text-align: center;
+                background-color: var(--bg-color);
+                color: #fff;
+                border-radius: 50%;
+                font-size: 18px;
+                line-height: 45px;
+            }
+        }
+        h3{
+            padding-top: 10px;
+            font-size: 23px;
+            font-weight: 600;
+            color: var(--bg-light);
+            text-transform: capitalize;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--para);
+            line-height: 24px;
+            padding-top: 15px;
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+}

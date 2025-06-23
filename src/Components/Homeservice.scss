@@ -1,0 +1,103 @@
+.service{
+     h4{
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: var(--gotu-family);
+        color: var(--bg-color)
+    }
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--bg-light);
+        width: 54%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    img{
+        margin-bottom: 40px;
+    }
+    .service_box{
+        position: relative;
+        background: #fff;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        padding: 40px 30px;
+        transition: all .5s ease;
+        &::before{
+            position: absolute;
+            content: '';
+            background-color: rgba(182, 85, 79, 0.9);
+            background-image: url(../assets/pic1.jpg);
+            background-blend-mode: multiply; // Optional, makes color blend with image
+            background-size: cover;
+            background-position: center;
+             border-radius: 10px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            z-index: -1;
+            transform-origin: bottom;
+            transition: all .5s ease;
+            transform: scale(1);
+        }
+        &:hover::before{
+            height: 100%;
+            transform-origin: top;
+            top: auto;
+            bottom: 0;
+        }
+        &:hover{
+            transform: scale(1.07);
+        }
+        svg{
+           margin: 0 auto;
+           margin-bottom: 20px;
+           fill: var(--bg-color);
+           width: 80px;
+           height: 80px;
+           transition: all .5s ease;
+        }
+        &:hover svg{
+            fill: #fff;
+        }
+        h3{
+           font-size: 28px;
+           font-weight: 600;
+           text-transform: capitalize;
+           font-family: var(--gotu-family);
+           margin-bottom: 10px;
+           color: var(--bg-light);
+           transition: all .5s ease;
+        }
+        &:hover h3{
+            color: #fff;
+        }
+        p{
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 500;
+            color: var(--para);
+            transition: all .5s ease;
+        }
+        &:hover p{
+            color: #fff;
+        }
+        span{
+            a{
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: var(--bg-color);
+                border-bottom: 2px solid var(--bg-color);
+                transition: all .5s ease;
+            }
+        }
+        &:hover span a{
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+}

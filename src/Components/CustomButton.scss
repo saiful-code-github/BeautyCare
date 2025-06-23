@@ -1,0 +1,41 @@
+.custom-btn {
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 10px 24px;
+  border-radius: 25px;
+  transition: all 0.4s ease-in-out;
+
+  .data-text {
+    display: inline-block;
+    transition: opacity 0.5s, transform 0.8s;
+
+    &::before {
+      position: absolute;
+      content: attr(data-text);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.5s, transform 0.8s;
+    }
+  }
+
+  &:hover .data-text::before {
+    opacity: 1;
+    transform: translate(-50%, 150%);
+  }
+
+  &:hover .data-text {
+    transform: translateY(-200%);
+  }
+
+  &:hover {
+    transform: translate3d(0, -2px, 0);
+  }
+}

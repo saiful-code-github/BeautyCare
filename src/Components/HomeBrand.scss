@@ -1,0 +1,13 @@
+.brand_sec{
+    .brand_box{
+        transition: all .3s ease;
+        img{
+            opacity: 0.7;
+            transition: all .3s ease;
+            cursor: pointer;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}

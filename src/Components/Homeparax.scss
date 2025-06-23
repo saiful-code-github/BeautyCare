@@ -1,0 +1,39 @@
+.parax_sec{
+    background: url(../assets/bg1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.3);
+    }
+    h4{
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: var(--gotu-family);
+        position: relative;
+        z-index: 2;
+    }
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        color: #fff;
+        font-family: var(--gotu-family);
+        position: relative;
+        padding: 20px 0;
+        z-index: 2;
+    }
+    img{
+        margin: 0 auto;
+        margin-bottom: 30px !important;
+    }
+}

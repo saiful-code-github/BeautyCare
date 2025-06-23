@@ -1,0 +1,104 @@
+.bottom-header {
+  .navbar{
+    padding: 15px 0;
+  }
+  .header_fixed {
+    position: fixed !important;
+    padding: 15px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+    animation: transfrom 0.4s both;
+    z-index: 999;
+    background-color: white;
+
+    @keyframes transfrom {
+      0% {
+        transform: translate3d(0, -100%, 0);
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+
+  .navbar-nav {
+    align-items: center !important;
+
+    .nav-item {
+      a {
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: var(--bg-light);
+        transition: all 0.4s ease;
+        padding: 0 !important;
+        margin: 0 !important;
+
+        &.active {
+          color: var(--bg-color) !important;
+        }
+
+        &:hover {
+          color: var(--bg-color);
+        }
+      }
+
+      padding-right: 25px;
+    }
+  }
+
+  button {
+    background-color: var(--bg-color);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px 24px;
+    border-radius: 25px;
+    margin-left: 20px;
+    overflow: hidden;
+
+    a {
+      color: #fff;
+      position: relative;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+
+      .data-text {
+        display: inline-block;
+        /* needed for transform to work */
+        transition: opacity 0.5s, transform 0.8s;
+
+        &::before {
+          position: absolute;
+          content: attr(data-text);
+          display: inline-block;
+          top: 50%;
+          left: 50%;
+          white-space: nowrap;
+          opacity: 0;
+          transform: translate(-50%, 100%);
+          transition: opacity 0.5s, transform 0.8s;
+        }
+      }
+
+      &:hover .data-text::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+      }
+
+      &:hover .data-text {
+        transform: translateY(-200%);
+      }
+
+      &:hover {
+        transform: translate3d(0, -2px, 0);
+      }
+    }
+  }
+}
